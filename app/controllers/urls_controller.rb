@@ -6,13 +6,6 @@ class UrlsController < ApplicationController
     @urls = Url.latest_10.includes(:clicks)
   end
 
-  def valid_url?(url)
-    uri = URI.parse(url)
-    uri.kind_of?(URI::HTTP) && !uri.host.nil?
-  rescue URI::InvalidURIError
-    false
-  end
-
   def generate_code
     code = nil
     loop do

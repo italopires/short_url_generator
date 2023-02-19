@@ -35,6 +35,3 @@ $ bin/rails server
 8. Open your browser
 
 [http://localhost:3000](http://localhost:3000/)
-
-## Challenge
-See [CHALLENGE.md](./CHALLENGE.md)
